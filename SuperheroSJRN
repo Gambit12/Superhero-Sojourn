@@ -1,0 +1,139 @@
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+				 //0	1	 2	  3	   4	5	 6	  7	   8	9	 10	  11
+char place[12] = {'S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'Z' };
+int forward[12] = {2, -1, 6, 9, 11, 10, 3, 4, 9, 5, 7};
+int left[12] = {-1, 6, 1, 8, 8, -1,9 ,-1 ,11 ,10 ,-1};
+int right[12] = {-1, 7, 2, 11, 2, -1, 4, 5, -1, 6, 9};
+//lets add the villains in as if statements. 
+	
+		
+	
+	
+main (){
+
+int location = 0;
+char at = place[location]; 
+
+
+printf("%c", at);	
+printf("%s\n", "Welcome to Superhero Sojourn!\n Please provide a character name ");
+
+//create character. 
+char name[20]; 
+scanf("%s", name);	//get the name of the character
+
+printf("%s\n", "Welcome to Superhero Sojourn!\n Please provide a character name ");
+printf("%s\n", "\n");
+
+while(location < 11){
+
+	
+	char input; 
+	scanf("%c", input);
+	//this moves the user through the maze. 
+	switch (input){
+		case 'f': 
+						location = forward[location]; 
+						at = place[location];
+						break;
+		case 'l': 
+						location = left[location];
+					 	at = place[location]; 
+					 	break;
+		case 'r': 
+						location = right[location];
+					  	at = place[location];
+					 	break; 
+		default: break;	
+	}
+	// this swith statement identifies a location and allows us to code the 
+	switch(location){
+		
+		case 0:
+			
+				break; 
+		case 1: 
+		
+		
+				break;
+		case 2: 
+		
+				
+				break;
+		case 3: 
+		
+		
+				break;
+		case 4: 
+		
+		
+		
+				break;
+		case 5: 
+		
+		
+		
+				break;
+		case 6: 
+		
+		
+		
+				break;
+		case 7: 
+		
+		
+				break;
+		case 8: 
+		
+		
+		
+				break;
+		case 9: 
+		
+		
+		
+				break;
+		case 10: 
+		
+		
+		
+				break;
+		case 11: 
+		
+		
+		
+				break;
+		case 12: 
+		
+		
+		
+				break;
+		
+		
+		default:break; 
+		
+		
+		
+		
+		
+	}
+	
+//all the user interactions with the game happen here.
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+	}
+
